@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--Black);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+
+    /* Colors */
+    --Primary-Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --Black: hsl(0, 0%, 8%);
+
+    /* Font Size & Weights */
+
+    --Font-p: 14px;
+    --sw: 400;
+    --mw: 600;
+    --bw: 700;
+
+}
+
+/* ===== GENERALS ===== */
+
+.social__card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--DarkGrey);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.social__card-user {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.user-img {
+    width: 52px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.user-name {
+    font-size: 1.24rem;
+    color: var(--White);
+    font-weight: var(--mw);
+}
+
+.user-location {
+    font-size: 11px;
+    color: var(--Primary-Green);
+    font-weight: var(--mw);
+    margin-top: 4px;
+}
+
+.user-about {
+    font-size: 12px;
+    color: var(--White);
+    margin-top: 15px;
+}
+
+.social__card-links {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.social__card-link {
+   margin: 7px 0;
+}
+
+.link {
+    background-color: var(--Grey);
+    display: inline-block;
+    padding: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--White);
+    font-size: 14px;
+    font-weight: var(--mw);
+}
+
+.link:active {
+    background-color: var(--Primary-Green);
+    color: var(--Black);
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (min-width: 375px) {
+    
+    .social__card {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .user-name {
+        font-size: 1.15rem;
+    }
+
+    .user-about {
+        font-size: 11px;
+    }
+
+    .user-location {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+
+    .social__card {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .user-img {
+        width: 80px;
+    }
+
+    .user-name {
+        font-size: 1.8rem;
+    }
+
+    .user-location {
+        font-size: 1rem;
+    }
+
+    .user-about {
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 1.1rem;
+    }
+}
